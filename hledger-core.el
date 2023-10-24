@@ -111,7 +111,7 @@
   "Insert the amount for a transaction in hledger."
   (beginning-of-line)
   (re-search-forward hledger-whitespace-account-regex)
-  (insert (concat "   " hledger-currency-string " ")))
+  (insert (concat "  " hledger-currency-string)))
 (defun hledger-delete-rupee-sign ()
   "Delete the rupee sign."
   (beginning-of-line)
